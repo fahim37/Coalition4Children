@@ -1,100 +1,149 @@
+import SignupForm from "@/components/signup-form";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col min-h-screen relative z-0">
+      <section className="relative w-full bg-gradient-to-b from-[#D7F8FF] to-[#2D5E69] overflow-visible py-12 rounded-b-[40px] h-[750px] md:h-[716px] z-0">
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="flex justify-between items-center mb-12">
+            <div className="flex items-center gap-2">
+              <Image
+                src="/coa-logo.png"
+                alt="International Coalition4Children Logo"
+                width={100}
+                height={100}
+                className="h-[70px] w-[70px]"
+              />
+            </div>
+            <a
+              href="#"
+              className="bg-[#25525D] hover:bg-[#25525D]/95 text-white px-4 py-2 rounded-md transition-colors"
+            >
+              Donate
+            </a>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Text Content */}
+          <div className=" md:pt-8 pb-8 text-center">
+            <h1 className="text-[38px] md:text-[56px] font-[700] text-[#265661] mb-4">
+              Protecting Our Children&apos;s Future
+            </h1>
+            <p className="text-[26px] md:text-[32px] font-[400] text-[#D3DDDF]">
+              Join the International Coalition4Children in safeguarding parental
+              rights and children&apos;s innocence
+            </p>
+          </div>
+        </div>
+
+        {/* Hero Image Positioned to Overlap Main Section */}
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 translate-y-[50%] md:h-[517px] z-20 w-full max-w-[1150px] px-6 md:px-auto">
+          <Image
+            src="/hero.jpeg"
+            alt="Hands together symbolizing protection"
+            className="w-full h-full object-cover rounded-lg shadow-xl"
+            width={1150}
+            height={515}
+          />
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 pt-[300px] pb-8">
+        <div className="space-y-6 text-[16px] text-[#000000]">
+          <p className="">
+            To: WHO director general Tedros Ghebreyesus, Secretary-General
+            Antonio Guterres, of the United Nations, Presidents and Prime
+            Ministers of nations, relevant government bodies, local leaders,
+            international stakeholders and citizens of the world.
+          </p>
+
+          <h2 className="text-4xl font-[500] text-center my-8">
+            The International Coalition4Children Declaration
+          </h2>
+
+          <p>
+            As parents, caregivers, educators, and concerned citizens, we have
+            grave concerns about the damaging physical, mental, emotional,
+            social health and the educational impacts of the current United
+            Nations (UN) and World Health Organisation&apos;s (WHO) Comprehensive
+            Sexuality Education (CSE) guidance.
+          </p>
+
+          <p>
+            We declare that parents and caregivers are the indisputable primary
+            and most influential educators in their children&apos;s lives, entrusted
+            with the responsibility of protecting their God-given inalienable
+            birthright, including innocence and dignity. Parents and caregivers
+            are the first and foremost authority in a child&apos;s life, until the
+            child is the legal age of majority at 18 years old. This prerogative
+            includes ensuring that our children&apos;s education aligns with our
+            instilled values and cultural traditions, and with our children&apos;s
+            understanding of age-appropriate content. Educators and concerned
+            citizens have the societal obligation to protect the vulnerable and
+            the impressionable, which includes children, from all forms of abuse,
+            coercion, confusion and indoctrination.
+          </p>
+
+          <p>
+            We declare that the current CSE material is overtly and subtly
+            explicit, exploitative and sexualised and therefore inappropriate for
+            minors. By providing this CSE material in an educational setting, we
+            assert that the WHO and UN are overstepping their boundaries, thereby
+            superseding and undermining our parental rights to guide our
+            children&apos;s development. We assert that moral and ethical teachings on
+            sexuality and relationships are the sole jurisdiction of the family.
+          </p>
+
+          <p>
+            Therefore, for the well-being of our children, we urge leaders to
+            recognise the unequivocal rights of parents and caregivers as the
+            primary decision-makers for their children&apos;s education, and we call
+            for a dialogue with the WHO to address our concerns and to
+            immediately cease the use of CSE in its current state, until an
+            agreed upon alternative can be reached. If the WHO and the UN are
+            unwilling to meet and dialogue with us, we call for an immediate
+            withdrawal of our nations from the WHO and the UN.
+          </p>
+
+          <p className="font-medium mt-8">
+            Please fill your full name &amp; Email if you agree with the petition
+            that children deserve education that aligns with family values and
+            respects the authority of parents.
+          </p>
+        </div>
+
+        {/* Form Section */}
+        <div className="mt-8">
+          <SignupForm />
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="bg-[#7FA7B0] mt-12 py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-[#FFFFFF]">
+                International Coalition4Children
+              </h3>
+              <p className="text-sm text-[#FFFFFF]">
+                Protecting parental rights and children&apos;s innocence
+              </p>
+            </div>
+            <a
+              href="#"
+              className="bg-[#25525D] hover:bg-[#25525D]/95 text-white px-4 py-2 rounded-md mt-4 md:mt-0 transition-colors"
+            >
+              Donate
+            </a>
+          </div>
+          <div className="border-t-2 border-[#FFFFFF] pt-6 mt-6">
+            <p className="text-center text-sm text-[#FFFFFF]">
+              © 2025 International Coalition4Children. All rights reserved.
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );

@@ -43,29 +43,33 @@ export default function SignupForm() {
     <>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem className="relative">
-                <FormControl>
-                  <Input placeholder="Full Name" className="pl-3 py-6 bg-white" {...field} />
-                </FormControl>
-                <FormMessage />
-                <User className="absolute right-3 top-1/2 -translate-y-[80%] text-gray-400 h-5 w-5" />
-              </FormItem>
-            )}
-          />
+        <FormField
+  control={form.control}
+  name="name"
+  render={({ field }) => (
+    <FormItem className="relative">
+      <FormControl>
+        <div className="relative"> {/* Add this relative wrapper */}
+          <Input placeholder="Full Name" className="pl-3 py-6 bg-white" {...field} />
+          <User className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" /> {/* Adjusted translate-y */}
+        </div>
+      </FormControl>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem className="relative">
                 <FormControl>
-                  <Input placeholder="Email" type="email" className="pl-3 py-6 bg-white" {...field} />
+                <div className="relative">
+                  <Input placeholder="Email" type="email" className="pl-3 py-6 bg-white focus:outline-none focus:ring-0" {...field} />
+                <Mail className="absolute right-3 top-1/2 -translate-y-[80%] text-gray-400 h-5 w-5" />
+                </div>
                 </FormControl>
                 <FormMessage />
-                <Mail className="absolute right-3 top-1/2 -translate-y-[80%] text-gray-400 h-5 w-5" />
               </FormItem>
             )}
           />

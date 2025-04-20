@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative z-0">
-      <section className="relative w-full bg-gradient-to-b from-[#D7F8FF] to-[#2D5E69] overflow-visible py-12 rounded-b-[40px] h-[750px] md:h-[716px] z-0">
+      <section className="relative w-full bg-gradient-to-b from-[#D7F8FF] to-[#2D5E69] overflow-visible rounded-b-[15px] md:rounded-b-[40px] h-[600px] md:h-[716px] z-0">
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex justify-between items-center mb-12">
             <div className="flex items-center gap-2">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         {/* Hero Image Positioned to Overlap Main Section */}
-        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 translate-y-[50%] md:h-[517px] z-20 w-full max-w-[1150px] px-6 md:px-auto">
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 translate-y-[50%] lg:h-[517px] z-20 w-full max-w-[1150px] px-6 md:px-auto">
           <Image
             src="/hero.jpeg"
             alt="Hands together symbolizing protection"
@@ -49,8 +49,8 @@ export default function Home() {
       </section>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 pt-[300px] pb-8">
-        <div className="space-y-6 text-[16px] text-[#000000]">
+      <main className="container mx-auto px-4 pt-[170px] md:pt-[300px] pb-8">
+        <div className="space-y-6 text-[16px] text-[#000000] text-justify">
           <p className="">
             To: WHO director general Tedros Ghebreyesus, Secretary-General
             Antonio Guterres, of the United Nations, Presidents and Prime
@@ -121,8 +121,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-[#7FA7B0] mt-12 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div className="container">
+          <div className="flex flex-col md:flex-row justify-between md:items-center items-start mb-8">
             <div>
               <h3 className="text-xl font-bold text-[#FFFFFF]">
                 International Coalition4Children
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
             <a
               href="#"
-              className="bg-[#25525D] hover:bg-[#25525D]/95 text-white px-4 py-2 rounded-md mt-4 md:mt-0 transition-colors"
+              className="bg-[#25525D] hover:bg-[#25525D]/95 text-white px-4 py-2 rounded-md mt-4 md:mt-0 transition-colors w-full text-center md:w-auto"
             >
               Donate
             </a>

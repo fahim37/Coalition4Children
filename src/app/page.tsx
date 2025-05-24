@@ -28,15 +28,17 @@ export default function Home() {
           <nav className="py-4">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/coa-logo.png"
-                  alt="International Coalition4Children Logo"
-                  width={100}
-                  height={100}
-                  className="h-[100px] w-[100px]"
-                />
-              </div>
+              <Link href="/">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/coa-logo.png"
+                    alt="International Coalition4Children Logo"
+                    width={100}
+                    height={100}
+                    className="h-[100px] w-[100px]"
+                  />
+                </div>
+              </Link>
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center gap-8">

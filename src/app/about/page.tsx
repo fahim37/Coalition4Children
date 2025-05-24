@@ -29,15 +29,17 @@ export default function CoalitionDocument() {
           <nav className="py-4">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/coa-logo.png"
-                  alt="International Coalition4Children Logo"
-                  width={100}
-                  height={100}
-                  className="h-[100px] w-[100px]"
-                />
-              </div>
+              <Link href="/">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/coa-logo.png"
+                    alt="International Coalition4Children Logo"
+                    width={100}
+                    height={100}
+                    className="h-[100px] w-[100px]"
+                  />
+                </div>
+              </Link>
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center gap-8">
@@ -134,33 +136,28 @@ export default function CoalitionDocument() {
               className="object-contain"
             />
           </div>
-          {/* <div className="text-center">
-          <p className="text-teal-800 uppercase text-sm font-semibold tracking-wider">
-            INTERNATIONAL
-          </p>
-          <p className="text-teal-800 uppercase text-sm font-semibold tracking-wider">
-            COALITION4CHILDREN
-          </p>
-        </div> */}
         </div>
 
-        <h1 className="text-4xl font-bold text-center mb-12">
+        <h1 className="text-4xl font-semibold italic text-center mb-12">
           International Coalition4Children
         </h1>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-6">Declaration</h2>
+          <h2 className="text-3xl font-semibold italic text-center mb-6">
+            Declaration
+          </h2>
           <p className="text-base">
-            We declare that parents are the indisputable primary and most
-            influential educators in their children&apos;s lives, entrusted by
-            God with the responsibility of protecting their God-given
-            inalienable birthright, including innocence and dignity, and no
-            entity, foreign or domestic, can usurp parental rights.
+            We declare that parents, in alignment with international human
+            rights law, are the indisputable primary and most influential
+            educators in their children&apos;s lives, entrusted with the
+            responsibility of protecting their inalienable birthright, including
+            innocence and dignity, and no entity, foreign or domestic, can usurp
+            parental rights.
           </p>
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-6">
+          <h2 className="text-3xl font-semibold italic text-center mb-6">
             Mission Statement
           </h2>
           <p className="text-base">
@@ -175,7 +172,9 @@ export default function CoalitionDocument() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-6">Core Values</h2>
+          <h2 className="text-3xl font-semibold italic text-center mb-6">
+            Core Values
+          </h2>
           <ol className="list-decimal pl-6 space-y-4">
             <li>
               Every child has the birthright to mature through natural puberty,
@@ -187,8 +186,8 @@ export default function CoalitionDocument() {
             </li>
             <li>
               Education must be free from any social-emotional learning or
-              interference of values, attitudes, behaviors and beliefs instilled
-              by their parents.
+              interference of values, attitudes, behaviours and beliefs
+              instilled by their parents.
             </li>
             <li>
               Moral and ethical teachings on sexuality and relationships are the
@@ -203,18 +202,14 @@ export default function CoalitionDocument() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold text-center mb-6">Action</h2>
+          <h2 className="text-3xl font-semibold italic text-center mb-6">
+            Action
+          </h2>
           <ol className="list-decimal pl-6 space-y-4">
-            <li>
-              Urge the leaders of nations to withdraw their membership from the
-              United Nations and World Health Organization.
-            </li>
             <li>
               Notify the United Nations and the World Health Organization that
               we renounce their unauthorized, over-reaching Comprehensive
-              Sexuality Education (CSE) and LGBTQ+ gender affirming ideologies,
-              as they violate the values of Western nations, founded on Biblical
-              principles.
+              Sexuality Education (CSE) and gender affirming ideologies.
               <ol className="list-[lower-alpha] pl-6 pt-2 space-y-2">
                 <li>
                   Education instruction must be strictly focused on basic
